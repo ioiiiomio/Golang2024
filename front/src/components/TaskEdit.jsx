@@ -51,7 +51,7 @@ const TaskEdit = ({tasks, fetchTasks}) => {
                 onChange={(e) => setDesc(e.target.value)}/>
                 <br />
 
-                <button type="submit">Save</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     )

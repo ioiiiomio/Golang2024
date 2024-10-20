@@ -1,5 +1,5 @@
 .task-checked {
-    text-decoration: line-through;
+    text-decoration: none;
     color: green;
 }
 

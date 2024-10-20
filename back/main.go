@@ -3,10 +3,10 @@ package main
 import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"github.com/ioiiiomio/go_task_management/config"
-	"github.com/ioiiiomio/go_task_management/models"
-	"github.com/ioiiiomio/go_task_management/routes"
-	//so i should specify current file
+	"github.com/ioiiiomio/Golang/models"
+	"github.com/ioiiiomio/Golang/routes"
+	"github.com/ioiiiomio/Golang2024/config"
+	//so I should specify current file
 	"log"
 )
 

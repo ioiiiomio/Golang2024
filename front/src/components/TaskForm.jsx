@@ -35,17 +35,17 @@ const TaskForm = ({fetchTasks}) => {
         <div>
             <h1>Add Task</h1>
             <form onSubmit={addTask}>
-                    <label htmlFor="title">Title</label>
+                    <label htmlFor="title">Task Title</label>
                     <input name="title"  type="text" value={title}
                     onChange={(e) => setTitle(e.target.value)}/>
                     <br />
 
-                    <label htmlFor="description">Description</label>
+                    <label htmlFor="description">Task Description</label>
                     <input name="description"  type="text"  value={descr}
                     onChange={(e) => setDescr(e.target.value)}/>
                     <br />
 
-                    <button type="submit">Add</button>
+                    <button type="submit">Submit</button>
             </form>
         </div>
     )

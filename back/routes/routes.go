@@ -1,14 +1,16 @@
 package routes
 
 import (
-	handlers "github.com/ioiiiomio/Golang2024/handlers"
-
 	"github.com/gin-gonic/gin"
+	"github.com/ioiiiomio/Golang2024/handlers"
 )
 
-func SetupRoutes(r *gin.Engine) {
-	r.GET("/tasks", handlers.GetTasks)
-	r.POST("/tasks", handlers.CreateTask)
-	r.DELETE("/tasks/:id", handlers.DeleteTask)
-	r.PUT("/tasks/:id", handlers.UpdateTask)
+func SetupRoutes(router *gin.Engine) {
+	taskRoutes := router.Group("/tasks")
+	{
+		taskRoutes.GET("", handlers.GetTasks)
+		taskRoutes.POST("", handlers.CreateTask)
+		taskRoutes.DELETE(":id", handlers.DeleteTask)
+		taskRoutes.PUT(":id", handlers.UpdateTask)
+	}
 }
